@@ -1,4 +1,4 @@
-package org.apifinder.entity;
+package org.apifinder.model;
 
 public class apiData {
 	

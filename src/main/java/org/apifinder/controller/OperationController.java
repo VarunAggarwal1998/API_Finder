@@ -16,8 +16,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 //import javax.servlet.api;
 
-import org.apifinder.api.getApiData;
-import org.apifinder.entity.apiData;
+import org.apifinder.model.apiData;
 import org.apifinder.model.apiModel;
 
 
@@ -53,7 +52,7 @@ public class OperationController extends HttpServlet {
 			resetApiPage(request,response);
 			//listApi(request, response);
 			break;	
-			
+		
 		default:
 			errorPage(request, response);
 			
@@ -64,6 +63,8 @@ public class OperationController extends HttpServlet {
 
 	}
 	
+	
+
 	private void deleteApi(int apiId) { 
 		new apiModel().deleteApi(dataSource, apiId);
 		return;
@@ -128,12 +129,7 @@ public class OperationController extends HttpServlet {
 			 resetdata.resetData(dataSource);
 			 listApi(request, response);
 			 break;
-		
-				
-
-			
-		
-		
+			 
 			
 			
 		default: 
@@ -160,7 +156,8 @@ public class OperationController extends HttpServlet {
 	public void listApi(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		List<apiData> listApi = new ArrayList<>();
-		listApi = new apiModel().listApi(dataSource);
+		
+		listApi = new apiModel().listApi(dataSource,request.getParameter("apiText"));
 		request.setAttribute("listApi", listApi);
 		request.setAttribute("title", "List of Api");
 		request.getRequestDispatcher("listApi.jsp").forward(request, response);

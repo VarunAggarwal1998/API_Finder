@@ -1,6 +1,7 @@
 package org.apifinder.model;
 
 import java.io.PrintWriter;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -13,22 +14,30 @@ import jakarta.annotation.Resource;
 
 import javax.sql.DataSource;
 
-import org.apifinder.entity.apiData;
 
 public class apiModel {
+	
 
-	public List<apiData> listApi(DataSource dataSource) {
+	public List<apiData> listApi(DataSource dataSource, String apiText) {
 		// Step 1: Initialize connection objects
 		List<apiData> listApi = new ArrayList<>(); 
         Connection connect = null;
         Statement stmt = null;
         ResultSet rs = null;
+        String query;
         
         try {
 			connect = dataSource.getConnection();
 			
+			if(apiText !=null) {
+				query = "select * from phase1_db.apiData1 where api like '%"+apiText+"%' or description like '%"+apiText+"%' or category like '%"+apiText+"%'";
+//				
+			}
+			else {
 			// Step 2: Create a SQL statements string
-			String query = "Select * from apiData1";
+			query = "Select * from apiData1";
+			
+			}
 			stmt = connect.createStatement();
 
 			// Step 3: Execute SQL query
@@ -40,6 +49,7 @@ public class apiModel {
 			}
 			
 			
+			connect.close();
 			
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -47,6 +57,7 @@ public class apiModel {
 		}
         return listApi;
 	}
+	
 
 	public boolean addApi(DataSource dataSource, apiData newApi) {
 		
@@ -89,7 +100,7 @@ public class apiModel {
 		
 	}
 
-	public void updateApi(DataSource dataSource, apiData updatedApi) {
+	public boolean updateApi(DataSource dataSource, apiData updatedApi) {
 
 		Connection connect = null;
 		PreparedStatement statement= null;
@@ -127,11 +138,12 @@ public class apiModel {
 			e.printStackTrace();
 			
 		}
+		return true;
 		
 		
 	}
 
-	public void deleteApi(DataSource dataSource, int apiId) {
+	public boolean deleteApi(DataSource dataSource, int apiId) {
 	
 		
 		Connection connect = null;
@@ -152,12 +164,13 @@ public class apiModel {
 			e.printStackTrace();
 			
 		}
+		return true;
 		
 
 		
 	}
 	
-public void truncateTable(DataSource dataSource) {
+public boolean truncateTable(DataSource dataSource) {
 	
 		
 		Connection connect = null;
@@ -178,6 +191,7 @@ public void truncateTable(DataSource dataSource) {
 			e.printStackTrace();
 			
 		}
+		return false;
 		
 
 		
