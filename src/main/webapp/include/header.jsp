@@ -48,14 +48,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="${pageContext.request.contextPath}/site?page=home">SOLID.</a>
+          <a class="navbar-brand" href="${pageContext.request.contextPath}/site?page=home">API Finder</a>
         </div>
         <div class="navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
             <li><a href="${pageContext.request.contextPath}/site?page=home">HOME</a></li>
             <li ><a href="${pageContext.request.contextPath}/operation?page=listapi"">LIST API</a></li>
             <li ><a href="${pageContext.request.contextPath}/operation?page=addapi"">ADD API</a></li>
-            <li ><a href="${pageContext.request.contextPath}/operation?page=resetapidata"">Reset API DATA</a></li>
+            <li ><a href="${pageContext.request.contextPath}/operation?page=resetapidata"">RESET API DATA</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

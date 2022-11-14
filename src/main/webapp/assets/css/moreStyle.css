@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#footerr {
+            position: fixed;
+           
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/
+            height: 180px;
+            background: grey;
+        }
