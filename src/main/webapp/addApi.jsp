@@ -1,12 +1,8 @@
 <%@include file="include/header.jsp" %>
-<link href="assets/css/moreStyle.css" rel="stylesheet">
 <div class="container mtb">
 	<div class="row">
 		<div class="col-lg-6">
-		<strong>Adding an API</strong><br/>
-		
 		<form action="${pageContext.request.contextPath}/operation" method="post">
-		<br>
 		API: <input type="text" name="api" required/><br/>
 		Description: <input type="text" name="description" required/><br/>
 		Auth: <input type="text" name="auth" required/><br/>
@@ -22,6 +18,4 @@
 		</div>
 	</div>
 </div>
- <div id="footerr">
 <%@include file="include/footer.jsp" %>
-</div>

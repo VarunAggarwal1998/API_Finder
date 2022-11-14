@@ -1,11 +1,10 @@
-
 <div id="footerwrap">
 	 	<div class="container">
 		 	<div class="row">
 		 		<div class="col-lg-4">
 		 			<h4>About</h4>
 		 			<div class="hline-w"></div>
-		 			<p>The growing source for all the public APIs is empowered by the community to ensure you will get the most recent data of all possible public APIs.</p>
+		 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 		 		</div>
 		 		<div class="col-lg-4">
 		 			<h4>Social Links</h4>
@@ -22,16 +21,16 @@
 		 			<h4>Our Bunker</h4>
 		 			<div class="hline-w"></div>
 		 			<p>
-		 				98 Rue Charlotte,<br/>
-		 				Montreal, Quebec,<br/>
-		 				Canada.<br/>
+		 				Some Ave, 987,<br/>
+		 				23890, New York,<br/>
+		 				United States.<br/>
 		 			</p>
 		 		</div>
 		 	
 		 	</div><! --/row -->
 	 	</div><! --/container -->
 	 </div><! --/footerwrap -->
-	
+	 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -43,7 +42,6 @@
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
   	<script src="assets/js/jquery.isotope.min.js"></script>
   	<script src="assets/js/custom.js"></script>
-  	<link href="assets/css/bootstarp.css" rel="stylesheet">
 
 
   </body>

@@ -182,7 +182,7 @@ table {
 }
 td,
 th {
-  padding: 8px;
+  padding: 0;
 }
 @media print {
   * {
@@ -762,7 +762,7 @@ pre code {
 }
 .row {
   margin-right: -15px;
-  margin-left: -150px;
+  margin-left: -15px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
@@ -4379,7 +4379,6 @@ a.list-group-item.active > .badge,
   font-size: 21px;
   font-weight: 200;
 }
-
 .container .jumbotron {
   border-radius: 6px;
 }
@@ -5782,44 +5781,5 @@ button.close {
   .hidden-print {
     display: none !important;
   }
-}
-.scrollit {
-    overflow:scroll;
-    height:100px;
-}
-.outer-wrapper {
-    margin: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid black;
-    border-radius: 4px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
-    max-width: fit-content;
-    max-height: fit-content;
-
-    
-}
-.table-wrapper {
-
-    overflow-y: scroll;
-    overflow-x: scroll;
-    height: fit-content;
-    max-height: 66.4vh;
-    
-    margin-top: 22px;
-    
-    margin: 15px;
-    padding-bottom: 20px;
-    
-}
-
-.tableContainer {
-    height: 300px;
-    overflow: hidden;
-}
-.table {
-    position: sticky;
-    top: 0;
-    width: 100%;
 }
 /*# sourceMappingURL=bootstrap.css.map */

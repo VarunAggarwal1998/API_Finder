@@ -29,18 +29,10 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
-tbody div{
-    overflow:scroll;
-    height:100px;
-}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-}
-.scrollit {
-    overflow:scroll;
-    height:100px;
 }
 
 p { 
@@ -190,7 +182,6 @@ a:focus {
 .mtb {
 	margin-top: 80px;
 	margin-bottom: 80px;
-	
 }
 
 .mb {
@@ -343,8 +334,8 @@ a:focus {
 
 /* Footer */
 #footerwrap {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	background: #384452;
 }
 
@@ -466,39 +457,4 @@ csmall2 {
 .share i {
 	padding-right: 15px;
 	font-size: 18px;
-}
-
-.outer-wrapper {
-    margin: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border: 1px solid black;
-    border-radius: 4px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
-    max-width: fit-content;
-    max-height: fit-content;
-
-    
-}
-.tableContainer {
-    height: 300px;
-    overflow: hidden;
-}
-.table {
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-.table-wrapper {
-
-    overflow-y: scroll;
-    overflow-x: scroll;
-    height: fit-content;
-    max-height: 66.4vh;
-    
-    margin-top: 22px;
-    
-    margin: 15px;
-    padding-bottom: 20px;
-    
 }
