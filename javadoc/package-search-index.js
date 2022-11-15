@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.apifinder.controller"},{"l":"org.apifinder.model"}];updateSearchResults();
