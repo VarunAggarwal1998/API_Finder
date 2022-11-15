@@ -1,0 +1,15 @@
+Created a common CRUD Application using JNDI and JSP.
+Transfered control from main class to OperationControler class for entire application.
+Moved domain Object and model related classes such as apiData and apiModel to Model package.
+Created SiteController class for handling fornt end click events.
+Created getApiData class to fetch live api data from a public api "https://api.publicapis.org/entries" in JSON format and insert it in database using Data Mapper & Table Data Gateway present in Model package.
+Moved OperationController, SiteController, getApiData in Controller Package.
+Removed TruncatTable method from OperationController class and added it to apiModel class.
+Removed several unused commented codes from the entire project for cleanup purpose.
+Added apiModelTest class for JUnit testing in Model package.
+Moved all jsp pages to webapp folder to follow MVC(Model, View, Architecture) design pattern.
+
+Removed unused Jars from the project build path. 
+
+
+
